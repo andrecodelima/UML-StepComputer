@@ -1,13 +1,11 @@
-package net.sys.hotel.loja;
-
-import java.time.LocalDate;
+package net.sys.loja.domain;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
-@Entity(name="hotel")
-public class Hotel {
+@Entity(name="empresa")
+public class Empresa {
 
 	@Id
 	@Column
@@ -19,8 +17,6 @@ public class Hotel {
 	@Column(name="razao_social")
 	private String razaoSocial;
 	
-	@Column(name="quantidade_acomodacoes")
-	private Integer quantidadeAcomodacoes;
 
  
 	

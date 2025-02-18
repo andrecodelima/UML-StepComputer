@@ -1,4 +1,4 @@
-package net.sys.hotel.loja;
+package net.sys.loja.domain;
 
 import java.time.LocalDate;
 
@@ -15,9 +15,6 @@ public class Funcionario {
 	
 	@Column
 	private Cargo cargo; 	 
-
-	@Column
-	private Hotel hotel;
 	
 	@Column
 	private String nome;

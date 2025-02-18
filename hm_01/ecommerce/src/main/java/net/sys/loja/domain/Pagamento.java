@@ -1,4 +1,6 @@
-package net.sys.hotel.loja;
+package net.sys.loja.domain;
+
+import java.time.LocalDate;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -11,11 +13,20 @@ public class Pagamento {
 	@Column
 	private Long id;
 	
+	private Produto produto;
+	
+	private Pedido pedido;
+	
+	
+	@Column
+	private String metodo;
+	
 	 @Column
-	private String tipoPagamento;
+	private Integer quantidade;
 	 
 	 @Column
-	private Float valor;
+	private Float precoUnitario;
+	 
 	
  
 	

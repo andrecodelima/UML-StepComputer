@@ -1,26 +1,20 @@
-package net.sys.hotel.loja;
+package net.sys.loja.domain;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 
-@Entity(name="atendente")
-public class Atendente {
+@Entity(name="hotel")
+public class Cargo {
 
 	@Id
 	@Column
 	private Long id;
 	
-	private Cargo cargo;
-	
 	@Column
 	private String nome;
 
-	@Column
-	private String descricao;
-
 	 
- 
 	
 	
 }
